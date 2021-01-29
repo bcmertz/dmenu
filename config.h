@@ -8,7 +8,8 @@ static int min_width = 1000;                /* minimum width when centered */
 /* -fn option overrides fonts[0]; default X11 font or font set */
 static const char *fonts[] = {
   "monospace:size=12",
-  "IranianSans:size=16",
+  /* "IranianSans:size=16", */
+  "VazirCode:size=16",
   "NotoColorEmoji:size=14"
 };
 static const unsigned int bgalpha = OPAQUE;
