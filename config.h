@@ -10,7 +10,8 @@ static const char *fonts[] = {
   "monospace:size=12",
   /* "IranianSans:size=16", */
   "VazirCode:size=16",
-  "NotoColorEmoji:size=14"
+  "NotoColorEmoji:size=14",
+  "UbuntuMonoNerdFont"
 };
 static const unsigned int bgalpha = OPAQUE;
 static const unsigned int fgalpha = OPAQUE;
