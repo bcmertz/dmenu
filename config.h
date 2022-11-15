@@ -5,6 +5,7 @@ static int topbar = 1;                      /* -b  option; if 0, dmenu appears a
 static int centered = 0;                    /* -c option; centers dmenu on screen */
 static int min_width = 720;                /* minimum width when centered */
 
+
 /* -fn option overrides fonts[0]; default X11 font or font set */
 static const char *fonts[] = {
   "monospace:size=11",
@@ -13,8 +14,7 @@ static const char *fonts[] = {
   "NotoColorEmoji:size=13",
   "UbuntuMonoNerdFont"
 };
-static const unsigned int bgalpha = OPAQUE;
-static const unsigned int fgalpha = OPAQUE;
+
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
 
 static const char *colors[SchemeLast][2] = {
@@ -24,11 +24,15 @@ static const char *colors[SchemeLast][2] = {
   [SchemeOut] = { "#000000", "#285577" },
 };
 
+static const unsigned int alpha = 0xD7;
+static const unsigned int bgalpha = OPAQUE;
+static const unsigned int fgalpha = OPAQUE;
+
 static const unsigned int alphas[SchemeLast][2] = {
   /*		fgalpha		bgalphga	*/
-  [SchemeNorm] = { fgalpha, bgalpha },
-  [SchemeSel] = { fgalpha, bgalpha },
-  [SchemeOut] = { fgalpha, bgalpha },
+  [SchemeNorm] = { fgalpha, alpha },
+  [SchemeSel] = { fgalpha, alpha },
+  [SchemeOut] = { fgalpha, alpha },
 };
 
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
